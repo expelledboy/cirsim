@@ -5,7 +5,6 @@ public class ImportExportDialogFactory
     {
 	if (f.applet != null)
 	{
-/*
 	    try
 	    {
 		return new ImportExportAppletDialog(f, type);
@@ -14,8 +13,6 @@ public class ImportExportDialogFactory
 	    {
 		return new ImportExportClipboardDialog(f, type);
 	    }
-*/
-		return new ImportExportClipboardDialog(f, type);
 	}
 	else
 	{

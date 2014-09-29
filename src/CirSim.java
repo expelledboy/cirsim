@@ -161,7 +161,7 @@ public class CirSim extends Frame
     Circuit applet;
 
     CirSim(Circuit a) {
-	super("Circuit Simulator v1.6h");
+	super("Circuit Simulator v1.6h.1");
 	applet = a;
 	useFrame = false;
     }
@@ -262,7 +262,7 @@ public class CirSim extends Frame
 	    mainMenu.add(m);
 	m.add(importItem = getMenuItem("Import"));
 	m.add(exportItem = getMenuItem("Export"));
-	m.add(exportLinkItem = getMenuItem("Export Link"));
+//	m.add(exportLinkItem = getMenuItem("Export Link"));
 	m.addSeparator();
 	m.add(exitItem   = getMenuItem("Exit"));
 

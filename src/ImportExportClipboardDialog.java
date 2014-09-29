@@ -22,11 +22,9 @@ implements ImportExportDialog,ActionListener
 	cframe = f;
 	setLayout(new ImportExportDialogLayout());
 	add(text = new TextArea("", 10, 60, TextArea.SCROLLBARS_BOTH));
-/*
 	if (type == Action.EXPORT)
 	    importButton = new Button("Copy to clipboard");
 	else
-*/
 	    importButton = new Button("Import");
 	this.type = type;
 	add(importButton);
@@ -56,7 +54,6 @@ implements ImportExportDialog,ActionListener
 	int i;
 	Object src = e.getSource();
 	if (src == importButton) {
-/*
 	    if (clipboard == null)
 		clipboard = getToolkit().getSystemClipboard();
 	    if ( type == Action.EXPORT )
@@ -65,7 +62,6 @@ implements ImportExportDialog,ActionListener
 		clipboard.setContents(data, data);
 	    }
 	    else
-*/
 	    {
 	        cframe.readSetup(text.getText());
 	    }
